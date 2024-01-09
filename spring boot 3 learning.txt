@@ -1,0 +1,24 @@
+spring boot 3 learning
+<parent> ...
+    default configuration for springboot apps
+
+20
+@SpringBootApplication
+    annotation is needed before the main class
+    and in the main
+        SpringApplication.run(Main.class, args)
+localhost:8080 default config
+    Whitelabel Error Page
+    This application has no explicit mapping for /error, so you are seeing this as a fallback.
+
+21
+under main / resources / application.yml
+server:
+    port: 3000
+
+changed the port where I can access my webserver location. 
+
+the defeault web application type is servlet, it is changabel with 
+spring:
+    main:
+        web-application-type: none, then it does not stays runnnig after starting it up, just stops in 1 sec. 
